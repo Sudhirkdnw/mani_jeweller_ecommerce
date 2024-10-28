@@ -51,9 +51,8 @@
                         <div class="col-lg-6">
                             <div class="ht-left_area">
                                 <div class="welcome_text">
-                                    <p>Free shipping on all domestic orders with coupon code
-                                        <span>"Earrings0920"</span>
-                                    </p>
+                                    <p><span>Mani Jewellers</span>, Bairy, Bithoor Road, Kalyanpur, Kanpur
+                                     </p>
                                 </div>
                             </div>
                         </div>
@@ -61,24 +60,17 @@
                             <div class="ht-right_area">
                                 <div class="ht-menu">
                                     <ul>
-                                        <li><a href="javascript:void(0)">Currency<i class="fa fa-chevron-down"></i></a>
+                                        <li><a href="javascript:void(0)">RATE<i class="fa fa-chevron-down"></i></a>
                                             <ul class="ht-dropdown ht-currency">
-                                                <li><a href="javascript:void(0)">€ EUR</a></li>
-                                                <li class="active"><a href="javascript:void(0)">£ Pound Sterling</a></li>
-                                                <li><a href="javascript:void(0)">$ Us Dollar</a></li>
+                                                <li><a href="javascript:void(0)">₹ DIAMOND</a></li>
+                                                <li class="active"><a href="javascript:void(0)">₹ GOLD</a></li>
+                                                <li><a href="javascript:void(0)">₹ SILVER</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="javascript:void(0)">Language <i class="fa fa-chevron-down"></i></a>
-                                            <ul class="ht-dropdown">
-                                                <li class="active"><a href="javascript:void(0)"><img src="assets/images/menu/icon/1.jpg" alt="JB's Language Icon">English</a></li>
-                                                <li><a href="javascript:void(0)"><img src="assets/images/menu/icon/2.jpg" alt="JB's Language Icon">Français</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="my-account.html">My Account<i class="fa fa-chevron-down"></i></a>
+                                        
+                                        <li><a href="/login">My Account<i class="fa fa-chevron-down"></i></a>
                                             <ul class="ht-dropdown ht-my_account">
-                                                <li><a href="javascript:void(0)">Register</a></li>
-                                                <li class="active"><a href="javascript:void(0)">Login</a></li>
+                                                <li class="active"><a href="/login">Login</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -94,8 +86,8 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-4 col-sm-4">
                         <div class="header-logo">
-                            <a href="#">
-                                <img src="{{asset ('frontend/assets/images/menu/logo/2.png')}}" alt="Hiraola's Header Logo">
+                            <a href="">
+                                <img src="{{asset ('frontend/assets/images/menu/logo/logo.png') }}" alt="Mani Jewellers">
                             </a>
                         </div>
                     </div>
@@ -103,7 +95,7 @@
                         <div class="main-menu_area">
                             <nav>
                                 <ul>
-                                    <li class="dropdown-holder"><a href="index.html">Home</a></li>
+                                    <li class="dropdown-holder"><a href="">Home</a></li>
                                     <li class="megamenu-holder"><a href="shop-left-sidebar.html">Shop</a> </li>
                                    
                                     <li><a href="index.html">Pages</a>
@@ -159,7 +151,7 @@
                         <div class="col-lg-2 col-md-4 col-sm-4">
                             <div class="header-logo">
                                 <a href="index.html">
-                                    <img src="{{asset ('frontend/assets/images/menu/logo/2.png')}}" alt="Hiraola's Header Logo">
+                                    <img src="{{asset ('frontend/assets/images/menu/logo/logo.png') }}" alt="Mani Jewellers">
                                 </a>
                             </div>
                         </div>
@@ -331,4 +323,3 @@
                 </div>
             </div>
         </header>
-        

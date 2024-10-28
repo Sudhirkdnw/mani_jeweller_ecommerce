@@ -24,5 +24,5 @@ class AdminSeeder extends Seeder
             $admin->password = Hash::make('Superadmin@1234@');
             $admin->save();
         }
-    }
+    }   
 }
