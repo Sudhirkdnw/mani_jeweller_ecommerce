@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset ('frontend/assets/images/favicon.ico')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset ('frontend/assets/images/favicon.png')}}">
 
     <!-- CSS
 	============================================ -->
@@ -95,24 +95,19 @@
                         <div class="main-menu_area">
                             <nav>
                                 <ul>
-                                    <li class="dropdown-holder"><a href="">Home</a></li>
-                                    <li class="megamenu-holder"><a href="shop-left-sidebar.html">Shop</a> </li>
+                                    <li class="dropdown-holder"><a href="../">Home</a></li>
+                                    <li class="megamenu-holder"><a href="/product">Shop</a> </li>
                                    
-                                    <li><a href="index.html">Pages</a>
+                                    <li><a href="/">Pages</a>
                                         <ul class="hm-dropdown">
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="login-register.html">Login | Register</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="compare.html">Compare</a></li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="404.html">404 Error</a></li>
-                                            <li><a href="coming-soon_page.html">Comming Soon</a></li>
+                                            <li><a href="/login">My Account</a></li>
+                                            <li><a href="/login">Login | Register</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Gallery</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -158,28 +153,21 @@
                         <div class="col-lg-7 d-none d-lg-block position-static">
                             <div class="main-menu_area">
                                 <nav>
-                                    <ul>
-                                        <li class="dropdown-holder"><a href="index.html">Home</a></li>
-                                        <li class="megamenu-holder"><a href="shop-left-sidebar.html">Shop</a>
-                                            
-                                        </li>
-                                       
-                                        <li><a href="index.html">Pages</a>
-                                            <ul class="hm-dropdown">
-                                                <li><a href="my-account.html">My Account</a></li>
-                                                <li><a href="login-register.html">Login | Register</a></li>
-                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="compare.html">Compare</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="404.html">404 Error</a></li>
-                                                <li><a href="coming-soon_page.html">Comming Soon</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                    </ul>
+                                <ul>
+                                    <li class="dropdown-holder"><a href="../">Home</a></li>
+                                    <li class="megamenu-holder"><a href="/product">Shop</a> </li>
+                                   
+                                    <li><a href="/">Pages</a>
+                                        <ul class="hm-dropdown">
+                                            <li><a href="/login">My Account</a></li>
+                                            <li><a href="/login">Login | Register</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="#">Gallery</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                </ul>
                                 </nav>
                             </div>
                         </div>

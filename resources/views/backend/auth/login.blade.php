@@ -1,7 +1,7 @@
 @extends('backend.auth.auth_master')
 
 @section('auth_title')
-    Login | Panchratna 
+    Login | Mani Jeweller's 
 @endsection
 
 @section('auth-content')

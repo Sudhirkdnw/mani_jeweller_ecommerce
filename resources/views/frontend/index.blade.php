@@ -136,11 +136,9 @@
                                         <span class="sticker">New</span>
                                         <div class="add-actions">
                                             <ul>
-                                                <li><a class="hiraola-add_cart" href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a>
-                                                </li>
-                                                <li><a class="hiraola-add_compare" href="compare.html" data-bs-toggle="tooltip" data-placement="top" title="Compare This Product"><i
-                                                    class="ion-ios-shuffle-strong"></i></a></li>
-                                                <li class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><a href="javascript:void(0)" data-bs-toggle="tooltip" data-placement="top" title="Quick View"><i
+                                               
+                                                
+                                                <li class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><a href="/product" data-bs-toggle="tooltip" data-placement="top" title="Quick View"><i
                                                     class="ion-eye"></i></a></li>
                                             </ul>
                                         </div>
@@ -546,48 +544,4 @@
         </div>
         <!-- Hiraola's Latest Blog Area End Here -->
 
-        <!-- Begin Hiraola's Brand Area -->
-        <div class="brand-area">
-            <div class="container">
-                <div class="brand-slider_nav">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="brand-slider">
-                                <div class="slide-item">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/brand/1.jpg" alt="Uren's Brand Image">
-                                    </a>
-                                </div>
-                                <div class="slide-item">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/brand/2.jpg" alt="Uren's Brand Image">
-                                    </a>
-                                </div>
-                                <div class="slide-item">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/brand/3.jpg" alt="Uren's Brand Image">
-                                    </a>
-                                </div>
-                                <div class="slide-item">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/brand/4.jpg" alt="Uren's Brand Image">
-                                    </a>
-                                </div>
-                                <div class="slide-item">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/brand/5.jpg" alt="Uren's Brand Image">
-                                    </a>
-                                </div>
-                                <div class="slide-item">
-                                    <a href="javascript:void(0)">
-                                        <img src="assets/images/brand/6.jpg" alt="Uren's Brand Image">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Hiraola's Brand Area End Here -->
 @include ('frontend.layouts.footer')

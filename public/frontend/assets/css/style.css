@@ -8478,7 +8478,7 @@ button.li-btn:hover {
   }
 }
 .about-us-area .overview-content > h2 span {
-  color: #cda557;
+  color: #b76e79;
 }
 .about-us-area .overview-content > h2:before {
   background-color: #f4f4f4;
@@ -8494,7 +8494,7 @@ button.li-btn:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #cda557;
+  background: #b76e79;
   height: 2px;
   width: 170px;
 }
@@ -8510,7 +8510,7 @@ button.li-btn:hover {
   }
 }
 .about-us-area .overview-content .hiraola-about-us_btn-area .about-us_btn {
-  background: #cda557;
+  background: #b76e79;
   color: #ffffff;
   display: block;
   float: left;

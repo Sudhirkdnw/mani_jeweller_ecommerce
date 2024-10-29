@@ -67,10 +67,7 @@
                                             <div class="widgets-essential_stuff">
                                                 <ul>
                                                     <li class="hiraola-address"><i
-                                                    class="ion-ios-location"></i><span>Address:</span> The Barn,
-                                                        Ullenhall, Henley
-                                                        in
-                                                        Arden B578 5CC, England</li>
+                                                    class="ion-ios-location"></i><span>Address:</span>Mani Jewellers, Bairy, Bithoor Road, Kalyanpur, Kanpur</li>
                                                     <li class="hiraola-phone"><i class="ion-ios-telephone"></i><span>Call
                                                     Us:</span> <a href="tel://+123123321345">+123 321 345</a>
                                                     </li>

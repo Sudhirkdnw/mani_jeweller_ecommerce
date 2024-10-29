@@ -6,7 +6,7 @@
     <div class="sidebar-header">
         <!-- <div class="logo"> -->
             <a href="{{ route('admin.dashboard') }}">
-                <h2 class="text-white">Panchratna </h2> 
+                <h2 class="text-white">Mani  </h2> 
             </a>
         <!-- </div> -->
     </div>
