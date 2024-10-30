@@ -9,7 +9,7 @@
 
                                 <div class="footer-widgets_logo">
                                     <a href="#">
-                                        <img src="assets/images/footer/logo/logo.png" alt="">
+                                        <img src="{{ asset('frontend/assets/images/footer/logo/logopink.png')}}" alt="">
                                     </a>
                                 </div>
 
@@ -69,7 +69,7 @@
                                                     <li class="hiraola-address"><i
                                                     class="ion-ios-location"></i><span>Address:</span>Mani Jewellers, Bairy, Bithoor Road, Kalyanpur, Kanpur</li>
                                                     <li class="hiraola-phone"><i class="ion-ios-telephone"></i><span>Call
-                                                    Us:</span> <a href="tel://+123123321345">+123 321 345</a>
+                                                    Us:</span> <a href="tel://+123123321345">+91 9250119191</a>
                                                     </li>
                                                     <li class="hiraola-email"><i
                                                     class="ion-android-mail"></i><span>Email:</span> <a href="mailto://info@yourdomain.com">info@yourdomain.com</a></li>

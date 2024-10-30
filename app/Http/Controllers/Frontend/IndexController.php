@@ -20,9 +20,13 @@ class IndexController extends Controller
     {
         $banner = Banner::all();
         $rate = Rate::all();
-        $perPage = $request->input('per_page', 4);
+        $perPage = $request->input('per_page',12);
         $product = Product::paginate($perPage);
-        return view('frontend.index', compact('banner','rate','product'));
+        $product_silver = Product::where('category', 'Silver')->get();
+        $product_gold = Product::where('category', 'Gold')->get();
+
+
+        return view('frontend.index', compact('banner','rate','product','product_silver','product_gold'));
     }
 
 public function show(int $id)

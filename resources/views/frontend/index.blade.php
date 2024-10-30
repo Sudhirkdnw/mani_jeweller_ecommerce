@@ -126,33 +126,33 @@
                     <div class="col-lg-12">
                         <div class="hiraola-product_slider">
                             <!-- Begin Hiraola's Slide Item Area -->
+                            @foreach ($product as $product)
                             <div class="slide-item">
                                 <div class="single_product">
                                     <div class="product-img">
                                         <a href="single-product.html">
-                                            <img class="primary-img" src="{{asset ('frontend/assets/images/product/medium-size/1-1.jpg')}}" alt="Hiraola's Product Image">
-                                            <img class="secondary-img" src="{{asset ('frontend/assets/images/product/medium-size/1-2.jpg')}}" alt="Hiraola's Product Image">
+                                            <img class="primary-img" src="{{ asset('uploads/products_image/'.$product->image) }}" alt="Mani's Product Image">
+                                            <img class="secondary-img" src="{{ asset('uploads/products_image/product_thumbnail/'.$product->thumbnail_1) }}" alt="Mani's Product Image">
                                         </a>
                                         <span class="sticker">New</span>
                                         <div class="add-actions">
                                             <ul>
                                                
                                                 
-                                                <li class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><a href="/product" data-bs-toggle="tooltip" data-placement="top" title="Quick View"><i
+                                                <li class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><a href="{{ route('frontend.productDetails', ['id' => $product->id]) }}" data-bs-toggle="tooltip" data-placement="top" title="Quick View"><i
                                                     class="ion-eye"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="hiraola-product_content">
                                         <div class="product-desc_info">
-                                            <h6><a class="product-name" href="single-product.html">Pendant, Made of White
-                                                    Pl...</a></h6>
+                                            <h6><a class="product-name" href="{{ route('frontend.productDetails', ['id' => $product->id]) }}">{{ $product->name }}</a></h6>
                                             <div class="price-box">
-                                                <span class="new-price">₹120.80</span>
+                                                <span class="new-price">{{ $product->weight }}</span>
                                             </div>
                                             <div class="additional-add_action">
                                                 <ul>
-                                                    <li><a class="hiraola-add_compare" href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                    <li><a class="hiraola-add_compare" href="" data-bs-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
                                                         class="ion-android-favorite-outline"></i></a>
                                                     </li>
                                                 </ul>
@@ -170,6 +170,7 @@
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                             <!-- Hiraola's Slide Item Area End Here -->
                         </div>
                     </div>
@@ -208,7 +209,7 @@
                     <div class="col-lg-12">
                         <div class="product-tab">
                             <div class="hiraola-tab_title">
-                                <h4>New Products</h4>
+                                <h4>Gold Jewellery</h4>
                             </div>
                             <ul class="nav product-menu">
                                 <li><a class="active" data-bs-toggle="tab" href="#necklaces"><span>Necklaces</span></a></li>
@@ -221,52 +222,52 @@
                             <div id="necklaces" class="tab-pane active show" role="tabpanel">
                                 <div class="hiraola-product-tab_slider-2">
                                     <!-- Begin Hiraola's Slide Item Area -->
-                                    <div class="slide-item">
-                                        <div class="single_product">
-                                            <div class="product-img">
-                                                <a href="single-product.html">
-                                                    <img class="primary-img" src="{{asset ('frontend/assets/images/product/medium-size/1-9.jpg')}}" alt="Mani's Product Image">
-                                                    <img class="secondary-img" src="{{asset ('frontend/assets/images/product/medium-size/1-8.jpg')}}" alt="Mani's Product Image">
-                                                </a>
-                                                <div class="add-actions">
-                                                    <ul>
-                                                        <li><a class="hiraola-add_cart" href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a>
-                                                        </li>
-                                                        <li><a class="hiraola-add_compare" href="compare.html" data-bs-toggle="tooltip" data-placement="top" title="Compare This Product"><i
-                                                            class="ion-ios-shuffle-strong"></i></a>
-                                                        </li>
-                                                        <li class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><a href="javascript:void(0)" data-bs-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                    </ul>
-                                                </div>
+                                    @foreach ($product_gold as $product)
+                            <div class="slide-item">
+                                <div class="single_product">
+                                    <div class="product-img">
+                                        <a href="single-product.html">
+                                            <img class="primary-img" src="{{ asset('uploads/products_image/'.$product->image) }}" alt="Mani's Product Image">
+                                            <img class="secondary-img" src="{{ asset('uploads/products_image/product_thumbnail/'.$product->thumbnail_1) }}" alt="Mani's Product Image">
+                                        </a>
+                                        <span class="sticker">New</span>
+                                        <div class="add-actions">
+                                            <ul>
+                                               
+                                                
+                                                <li class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><a href="{{ route('frontend.productDetails', ['id' => $product->id]) }}" data-bs-toggle="tooltip" data-placement="top" title="Quick View"><i
+                                                    class="ion-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="hiraola-product_content">
+                                        <div class="product-desc_info">
+                                            <h6><a class="product-name" href="{{ route('frontend.productDetails', ['id' => $product->id]) }}">{{ $product->name }}</a></h6>
+                                            <div class="price-box">
+                                                <span class="new-price">{{ $product->weight }}</span>
                                             </div>
-                                            <div class="hiraola-product_content">
-                                                <div class="product-desc_info">
-                                                    <h6><a class="product-name" href="single-product.html">Flash Furniture
-                                                            Alonza Se...</a></h6>
-                                                    <div class="price-box">
-                                                        <span class="new-price">₹90.36</span>
-                                                    </div>
-                                                    <div class="additional-add_action">
-                                                        <ul>
-                                                            <li><a class="hiraola-add_compare" href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
-                                                                class="ion-android-favorite-outline"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                            <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                            <div class="additional-add_action">
+                                                <ul>
+                                                    <li><a class="hiraola-add_compare" href="" data-bs-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                        class="ion-android-favorite-outline"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rating-box">
+                                                <ul>
+                                                    <li><i class="fa fa-star-of-david"></i></li>
+                                                    <li><i class="fa fa-star-of-david"></i></li>
+                                                    <li><i class="fa fa-star-of-david"></i></li>
+                                                    <li><i class="fa fa-star-of-david"></i></li>
+                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Hiraola's Slide Item Area End Here -->
+                                </div>
+                            </div>
+                            @endforeach
+                             <!-- Hiraola's Slide Item Area End Here -->
                                    </div>
                             </div>
                             <div id="earrings" class="tab-pane" role="tabpanel">
@@ -308,7 +309,7 @@
                     <div class="col-lg-12">
                         <div class="product-tab">
                             <div class="hiraola-tab_title">
-                                <h4>Trending Products</h4>
+                                <h4>Silver Jewellery</h4>
                             </div>
                             <ul class="nav product-menu">
                                 <li><a class="active" data-bs-toggle="tab" href="#necklaces-2"><span>Necklaces</span></a></li>
@@ -321,51 +322,52 @@
                             <div id="necklaces-2" class="tab-pane active show" role="tabpanel">
                                 <div class="hiraola-product-tab_slider-2">
                                     <!-- Begin Hiraola's Slide Item Area -->
-                                    <div class="slide-item">
-                                        <div class="single_product">
-                                            <div class="product-img">
-                                                <a href="single-product.html">
-                                                    <img class="primary-img" src="{{asset ('frontend/assets/images/product/medium-size/1-5.jpg')}}" alt="Hiraola's Product Image">
-                                                    <img class="secondary-img" src="{{asset ('frontend/assets/images/product/medium-size/1-9.jpg')}}" alt="Hiraola's Product Image">
-                                                </a>
-                                                <div class="add-actions">
-                                                    <ul>
-                                                        <li><a class="hiraola-add_cart" href="cart.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="ion-bag"></i></a>
-                                                        </li>
-                                                        <li><a class="hiraola-add_compare" href="compare.html" data-bs-toggle="tooltip" data-placement="top" title="Compare This Product"><i
-                                                            class="ion-ios-shuffle-strong"></i></a>
-                                                        </li>
-                                                        <li class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><a href="javascript:void(0)" data-bs-toggle="tooltip" data-placement="top" title="Quick View"><i class="ion-eye"></i></a></li>
-                                                    </ul>
-                                                </div>
+                                    @foreach ($product_silver as $product)
+                            <div class="slide-item">
+                                <div class="single_product">
+                                    <div class="product-img">
+                                        <a href="single-product.html">
+                                            <img class="primary-img" src="{{ asset('uploads/products_image/'.$product->image) }}" alt="Mani's Product Image">
+                                            <img class="secondary-img" src="{{ asset('uploads/products_image/product_thumbnail/'.$product->thumbnail_1) }}" alt="Mani's Product Image">
+                                        </a>
+                                        <span class="sticker">New</span>
+                                        <div class="add-actions">
+                                            <ul>
+                                               
+                                                
+                                                <li class="quick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><a href="{{ route('frontend.productDetails', ['id' => $product->id]) }}" data-bs-toggle="tooltip" data-placement="top" title="Quick View"><i
+                                                    class="ion-eye"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="hiraola-product_content">
+                                        <div class="product-desc_info">
+                                            <h6><a class="product-name" href="{{ route('frontend.productDetails', ['id' => $product->id]) }}">{{ $product->name }}</a></h6>
+                                            <div class="price-box">
+                                                <span class="new-price">{{ $product->weight }}</span>
                                             </div>
-                                            <div class="hiraola-product_content">
-                                                <div class="product-desc_info">
-                                                    <h6><a class="product-name" href="single-product.html">Puoly and Bark Eames
-                                                            Styl...</a></h6>
-                                                    <div class="price-box">
-                                                        <span class="new-price">₹60.00</span>
-                                                    </div>
-                                                    <div class="additional-add_action">
-                                                        <ul>
-                                                            <li><a class="hiraola-add_compare" href="wishlist.html" data-bs-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
-                                                                class="ion-android-favorite-outline"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                            <li><i class="fa fa-star-of-david"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                            <div class="additional-add_action">
+                                                <ul>
+                                                    <li><a class="hiraola-add_compare" href="" data-bs-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i
+                                                        class="ion-android-favorite-outline"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rating-box">
+                                                <ul>
+                                                    <li><i class="fa fa-star-of-david"></i></li>
+                                                    <li><i class="fa fa-star-of-david"></i></li>
+                                                    <li><i class="fa fa-star-of-david"></i></li>
+                                                    <li><i class="fa fa-star-of-david"></i></li>
+                                                    <li class="silver-color"><i class="fa fa-star-of-david"></i></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                            @endforeach
+
                                     <!-- Hiraola's Slide Item Area End Here -->
                                 </div>
                             </div>
@@ -391,7 +393,7 @@
                                 <div class="blog-item">
                                     <div class="blog-img img-hover_effect">
                                         <a href="blog-details-left-sidebar.html">
-                                            <img src="assets/images/blog/medium-size/2.jpg" alt="Hiraola's Blog Image">
+                                            <img src="{{ asset ('frontend/assets/images/blog/medium-size/1.jpg')}}" alt="Hiraola's Blog Image">
                                         </a>
                                         <div class="blog-meta-2">
                                             <div class="blog-time_schedule">
@@ -403,7 +405,7 @@
                                     <div class="blog-content">
                                         <div class="blog-heading">
                                             <h5>
-                                                <a href="blog-details-left-sidebar.html">Gt wisi enim ad minim veniam.</a>
+                                                <a href="">Gt wisi enim ad minim veniam.</a>
                                             </h5>
                                         </div>
                                         <div class="blog-short_desc">
@@ -421,7 +423,7 @@
                                 <div class="blog-item">
                                     <div class="blog-img img-hover_effect">
                                         <a href="blog-details-left-sidebar.html">
-                                            <img src="assets/images/blog/medium-size/3.jpg" alt="Hiraola's Blog Image">
+                                            <img src="{{ asset ('frontend/assets/images/blog/medium-size/3.jpg')}}" alt="Hiraola's Blog Image">
                                         </a>
                                         <div class="blog-meta-2">
                                             <div class="blog-time_schedule">
@@ -451,7 +453,7 @@
                                 <div class="blog-item">
                                     <div class="blog-img img-hover_effect">
                                         <a href="blog-details-left-sidebar.html">
-                                            <img src="assets/images/blog/medium-size/4.jpg" alt="Hiraola's Blog Image">
+                                            <img src="{{ asset ('frontend/assets/images/blog/medium-size/4.jpg')}}" alt="Hiraola's Blog Image">
                                         </a>
                                         <div class="blog-meta-2">
                                             <div class="blog-time_schedule">
@@ -481,7 +483,7 @@
                                 <div class="blog-item">
                                     <div class="blog-img img-hover_effect">
                                         <a href="blog-details-left-sidebar.html">
-                                            <img src="assets/images/blog/medium-size/2.jpg" alt="Hiraola's Blog Image">
+                                            <img src="{{ asset ('frontend/assets/images/blog/medium-size/2.jpg')}}" alt="Hiraola's Blog Image">
                                         </a>
                                         <div class="blog-meta-2">
                                             <div class="blog-time_schedule">
@@ -511,7 +513,7 @@
                                 <div class="blog-item">
                                     <div class="blog-img img-hover_effect">
                                         <a href="blog-details-left-sidebar.html">
-                                            <img src="assets/images/blog/medium-size/3.jpg" alt="Hiraola's Blog Image">
+                                            <img src="{{ asset ('frontend/assets/images/blog/medium-size/3.jpg')}}" alt="Hiraola's Blog Image">
                                         </a>
                                         <div class="blog-meta-2">
                                             <div class="blog-time_schedule">
@@ -543,5 +545,51 @@
             </div>
         </div>
         <!-- Hiraola's Latest Blog Area End Here -->
+
+        <!-- Begin Hiraola's Brand Area -->
+        <div class="brand-area">
+            <div class="container">
+                <div class="brand-slider_nav">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="brand-slider">
+                                <div class="slide-item">
+                                    <a href="javascript:void(0)">
+                                        <img src="{{ asset('frontend/assets/images/footer/logo/logopink.png')}}" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="javascript:void(0)">
+                                        <img src="{{ asset('frontend/assets/images/footer/logo/logopink.png')}}" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="javascript:void(0)">
+                                        <img src="{{ asset('frontend/assets/images/footer/logo/logopink.png')}}" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="javascript:void(0)">
+                                        <img src="{{ asset('frontend/assets/images/footer/logo/logopink.png')}}" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="javascript:void(0)">
+                                        <img src="{{ asset('frontend/assets/images/footer/logo/logopink.png')}}" alt="Brand Image">
+                                    </a>
+                                </div>
+                                <div class="slide-item">
+                                    <a href="javascript:void(0)">
+                                        <img src="{{ asset('frontend/assets/images/footer/logo/logopink.png')}}" alt="Brand Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hiraola's Brand Area End Here -->
+
 
 @include ('frontend.layouts.footer')
